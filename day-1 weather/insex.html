@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/day-1 weather/style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/day-1 weather/all.min.css">
     <script src="https://kit.fontawesome.com/18ec148171.js" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -19,19 +19,19 @@
             <p>you have entered wrong city name</p>
         </div>
         <div class="weather">
-            <img src="/day-1 weather/images/rain.png"  class="weather-icon" alt="">
+            <img src="/images/rain.png"  class="weather-icon" alt="">
             <h1 class="temp">22°c</h1>
             <h2 class="city">New york</h2>
             <div class="details">
                 <div class="col">
-                    <img src="/day-1 weather/images/humidity.png" alt="">
+                    <img src="/images/humidity.png" alt="">
                     <div >
                         <p class="Humidity">50%</p>
                     <p>humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="/day-1 weather/images/wind.png" alt="">
+                    <img src="/images/wind.png" alt="">
                     <div >
                         <p class="Wind">50 KM/H</p>
                     <p>wind speed</p>
@@ -62,20 +62,20 @@ document.querySelector(".Wind").innerHTML=data.wind.speed+" KM/H";
 document.querySelector(".Humidity").innerHTML=data.main.humidity+"%";
 
 if(data.weather[0].main == "Clouds"){
-    weather_icon.src="/day-1 weather/images/clouds.png"
+    weather_icon.src="/images/clouds.png"
 }else if(data.weather[0].main == "Clear"){
-    weather_icon.src="/day-1 weather/images/clear.png"
+    weather_icon.src="/images/clear.png"
 
 }else if(data.weather[0].main == "Rain"){
-    weather_icon.src="/day-1 weather/images/rain.png"
+    weather_icon.src="/images/rain.png"
 
 }
 else if(data.weather[0].main == "Drizzle"){
-    weather_icon.src="/day-1 weather/images/drizzle.png"
+    weather_icon.src="/images/drizzle.png"
 
 }
 else if(data.weather[0].main == "Mist"){
-    weather_icon.src="/day-1 weather/images/mist.png"
+    weather_icon.src="/images/mist.png"
 
 }
 
