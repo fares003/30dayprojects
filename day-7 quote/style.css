@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #bbc6fa;
+}
+.card{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+background-color: white;
+width: 700px;
+border-radius: 4px;
+padding: 40px;
+text-align: center;
+box-shadow: 1px 5px 17px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 5px 17px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 5px 17px -5px rgba(0,0,0,0.75);
+}
+.card h2{
+    margin-bottom: 20px;
+    position: relative;
+}
+.card h2::after{
+    content: "";
+    width: 15%;
+    height: 2px;
+    background-color: rgb(23, 124, 229);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0 );
+    top: 100%;
+}
+.card .buttons{
+display: flex;
+justify-content: space-around;
+margin-top: 30px;
+}
+.card button{
+width: 100px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+}
+#newQuote{
+    background-color: rgb(23, 124, 229);
+    color: white;
+}
+#tweeter{
+border: 1px solid rgb(23, 124, 229);
+background-color: white;
+}
+#tweeter i{
+    color: rgb(23, 124, 229);
+}
+.card blockquote{
+    margin-bottom: 10px;
+}
+.card .author{
+    position: relative;
+    right: -210px;
+}
+.card .author:after{
+content: "";
+position: absolute;
+width: 10px;
+height: 2px;
+background-color: rgb(23, 124, 229);
+left: -15px;
+top: calc(50% - 1px);
+}
